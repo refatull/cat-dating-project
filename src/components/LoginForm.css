@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     animation: fade-in 1s;
-    background-image: url('https://images.pexels.com/photos/1467584/pexels-photo-1467584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/1510543/pexels-photo-1510543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     height: 100vh;
     color: white;
@@ -13,8 +13,12 @@
   .login-form form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 300px;
+    backdrop-filter: blur(0.5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
   }
   
   .login-form label {
@@ -35,18 +39,21 @@
   .login-form button {
     padding: 0.5rem 1rem;
     background-color: black;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .login-form button:hover {
-    background-color: #222;
+    background-color:  #ff6347; ;
   }
   
   .login-form h2 {
     color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .login-form .already-have-account {
@@ -57,17 +64,31 @@
   
   .login-form .already-have-account button {
     margin-left: 0.5rem;
-    background-color: black;
-    color: #fff;
+    background-color: transparent;
+    color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     text-decoration: underline;
   }
+  button.register-button {
+    background-color: black;
+    color: white;
+  }
+  
+  button.register-button:hover {
+    background-color:#ff6347;
+  }
   
   .login-form .already-have-account button:hover {
-    background-color: #222;
+    color: #ff6347;
   }
+
+  .new-user {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
   
   @keyframes fade-in {
     from {

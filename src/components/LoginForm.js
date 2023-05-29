@@ -33,10 +33,10 @@ const LoginForm = () => {
           <label>Password</label>
           <input type="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
       <div className="new-user">
-        New user? <Link to="/registration">Register</Link>
+        New user? <Link to="/registration"><button className="register-button">Register</button></Link>
       </div>
     </div>
   );
