@@ -1,12 +1,18 @@
 import React from 'react';
-import HomePage from './components/HomePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+import HomePage from './components/HomePage';
+import RegistrationForm from './components/RegistrationForm';
+
+const App = () => {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/registration" element={<RegistrationForm />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
