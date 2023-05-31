@@ -23,7 +23,7 @@ const RegistrationForm = () => {
 
   return (
     <div className="registration-form">
-      <h2>Lets get Catting</h2>
+      <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Email</label>
